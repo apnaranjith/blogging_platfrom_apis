@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const authrouter = require("./routes/auth");
+const authrouter = require("./routes/authRouter");
 app.use(authrouter);
 const AdminRouter = require("./routes/AdminRouter");
 app.use(AdminRouter);
